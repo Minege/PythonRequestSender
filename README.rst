@@ -1,4 +1,3 @@
-# Python Request Sender
 A Simple Python Request Sender by Minege.
 
 Choosable :

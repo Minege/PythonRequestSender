@@ -41,4 +41,4 @@ def send_request(website, direction='/', type='GET', agent=random.choice(uagent)
     data = s.recv(999999999)
     s.shutdown(1)
     s.close()
-    return data
+    return data.decode()
