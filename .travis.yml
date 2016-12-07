@@ -1,11 +1,17 @@
 language: python
 python:
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev" # 3.5 development branch
-  - "3.6-dev" # 3.6 development branch
-  - "nightly" # currently points to 3.7-dev
-# command to install dependencies
-# install: "pip install -r requirements.txt"
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+- 3.5-dev
+- 3.6-dev
+- nightly
+deploy:
+  provider: pypi
+  user:
+    secure: aBDfbGyyT+HYouzlGNt6jYFMtn8QIQpeVTFjw76yyJ+AEyPwVvarAY114VOsBUVmBeovm7vzFoQXH8SmsL4ysyv+Y2/dzUVWKhmfy1H4EXWUx8cbKqU8O6Jfdu/5F23nnRljTtLSZCu22dY/W1geUZOJoEJLACrMcRFvJL8+Zi8Ecsh7Bg+CEr1Ib7mPUaQIVL+ILui7vd+4GQWjWNsfP1wHsXLqqgAVH9TNujfh1CW7yZeX0SEsP/oiOyY6hr1evPuyid7+vsGK1G2RD2cjJyKo0qmfhi4TBHKd09dnvkai7kwZsMi+ucrywXWcvENljOvVWfPiWn1yHFk7fr5/kUmBC79wSPBHEWB5rbmgyLCWDwP4OpSSlMAwsPWanmm2qWKrGmxdXh6J7rvQNbIGjt22YXsbExPAQuurtGURS2giL/+K4qo2fa0KJcxZ2+68U5wWoWYv644CFTkzla0KR9mPtVQsJKw5fCRetyKLcK07mTscAKeCyr8qkmnwiz+5ROZOIc5w4jCWpZ4nP9elcMllIjQ6Vy0QpJk/9xI9TJNnjh77bA5Un1K1MC6jraV+/RGgdvvYRMuJCinOrCgjKtJ/ZDAQgvxVkgu+XRrb5A+HyVn+i3xLD9rUf2iWyWsurxvdUAniSbJ4yQIzKkAUlpHsyRqd30y6FkimXpPD83c=
+  password:
+    secure: YYWMaUFrY+CAIO6j/un2WA3U+bsHX04RQ2SS5qKOKNekCvkTFizGm2IfqfqlD0nwkyV3+0hVCGKafdj5Krn+CkvUTRD71o8gwSg22b0gfX1pGiJcfIqA/aMrr/eTFPRr0XthnOiJ3qRUdAL9y30zpXa6YUc1OIqsPqStQn02txunFPkjpy43YqV4YZFZUzFjjcr7RD+InSLUCOJtnLaPVaWRbMC9eXKX+XhYPPVLZCZuGdofreJg+/s2ZWlAK0mo1QG8dlYvnt/+r5l/FHV6c5lOlUXlaHReqO8jT5BrX/UCtsDkpnXxHkpsD0IrFuXjg0iIRjpzZOwRFMUUz81P7szP6m5efztTNp38+9HquV9RDRvQ+eaoZacbky214wgJ023mcRMrJsTW/BCYdHtj2+vuVSH6TXA/mCvzklA72uOYFXdgLbRRqshIaKW3I4k3TdCgjHhiyVUwE+v2F9Ge7hmkrEhHSmxzkdKRoXAVFOm4MSuLgta262gSJ//kZwlEwp9fMYsyZZA0jjM5lpS1mex6nso0bI/8hQ1cMw6p7PCUaboyzyK5UUd3/nOzaLHE/UTMJrQDBmKGkDePaOo1nr4tBiKNyMJ2Mi7ApJ0kdQ13SRJK/hj+wM8Y5XRN/7xw3lO3TluG3I4nfkitfGM1eImov2+upNW8VHkiMefGSvQ=
+  on:
+    tags: true
