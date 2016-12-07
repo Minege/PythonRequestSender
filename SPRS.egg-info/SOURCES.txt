@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pythonrequestsender.py
+setup.cfg
+setup.py
+SPRS.egg-info/PKG-INFO
+SPRS.egg-info/SOURCES.txt
+SPRS.egg-info/dependency_links.txt
+SPRS.egg-info/top_level.txt
